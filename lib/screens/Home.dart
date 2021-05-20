@@ -45,7 +45,7 @@ class Home extends StatelessWidget {
             child: Column(
               children: <Widget> [
                 IconButton(
-                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0) ,
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0) ,
                   splashColor: Colors.black,
                   icon: Image.asset('images/newReading.png'),
                   iconSize: 350,
@@ -74,6 +74,9 @@ class Home extends StatelessWidget {
 
                       ), )
 
+                ),
+                SizedBox(
+                  height: 10,
                 ),
 
                 FlatButton(

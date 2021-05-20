@@ -93,7 +93,7 @@ class _OpeningScreenState extends State<OpeningScreen> {
                     ), )
                   ),
 
-
+                  /*
                   FlatButton(
                       padding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                       color: Color(0xFFFBB03B),
@@ -166,7 +166,7 @@ class _OpeningScreenState extends State<OpeningScreen> {
 
                         ), )
                   ),
-
+                */
 
                 ],
               ),

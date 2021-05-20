@@ -62,7 +62,7 @@ class _ScamState extends State<Scam> {
 
              padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
              color: Color(0xFFFAF7EA),
-             width: MediaQuery.of(context).size.width * 0.8,
+             width: MediaQuery.of(context).size.width * 0.83,
              height: MediaQuery.of(context).size.height * 0.85,
 
              child: SingleChildScrollView(
@@ -642,7 +642,7 @@ class _ScamState extends State<Scam> {
 
 
                        },
-                       child: Text('Start',
+                       child: Text("Let's Go",
                          style: TextStyle(
                            color: Colors.white,
                            fontFamily: 'Elsie',
