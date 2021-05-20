@@ -78,6 +78,7 @@ class _SignInState extends State<SignIn> {
                 ),
                 SizedBox(height: 20.0),
                 RaisedButton(
+                  key: new Key("login"),
                     color: Color(0xFFFBB03B),
                     child: Text(
                       'Sign In',
