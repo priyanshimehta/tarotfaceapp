@@ -73,28 +73,6 @@ void main() {
     expect(mock.didRequestSignIn, false);
   });
 
-  testWidgets('non-empty email and password, valid account, calls sign in, succeeds', (WidgetTester tester) async {
-
-    AuthMock mock = new AuthMock(userId: 'uid');
-    LoginPage loginPage = new LoginPage(title: 'test', auth: mock);
-    await tester.pumpWidget(buildTestableWidget(loginPage));
-
-    Finder emailField = find.byKey(new Key('email'));
-    await tester.enterText(emailField, 'email');
-
-    Finder passwordField = find.byKey(new Key('password'));
-    await tester.enterText(passwordField, 'password');
-
-    Finder loginButton = find.byKey(new Key('login'));
-    await tester.tap(loginButton);
-
-    await tester.pump();
-
-    Finder hintText = find.byKey(new Key('hint'));
-    expect(hintText.toString().contains('Signed In'), true);
-
-    expect(mock.didRequestSignIn, true);
-  });
 
   testWidgets('non-empty email and password, invalid account, calls sign in, fails', (WidgetTester tester) async {
 
